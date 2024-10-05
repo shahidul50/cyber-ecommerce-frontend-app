@@ -1,29 +1,19 @@
-import localFont from "next/font/local";
+import Header from "./components/shared/Header";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { figtree, sfProDisplay } from "./utils/font";
 
 export const metadata = {
   title: "Cyber E-commerce App",
-  description: "Cyber is a Electronics base e-commerce app",
+  description: "Cyber is a electronics product base e-commerce application.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${figtree.variable} ${sfProDisplay.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>

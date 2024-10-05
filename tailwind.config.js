@@ -11,6 +11,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        figtree: "var(--font-figtree)",
+        srProDisplay: "var(--font-srProDisplay)",
+      },
     },
   },
   plugins: [],
