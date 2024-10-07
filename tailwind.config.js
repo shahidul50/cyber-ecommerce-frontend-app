@@ -15,6 +15,9 @@ module.exports = {
         figtree: "var(--font-figtree)",
         srProDisplay: "var(--font-srProDisplay)",
       },
+      screens: {
+        xs: "420px",
+      },
     },
   },
   plugins: [],
