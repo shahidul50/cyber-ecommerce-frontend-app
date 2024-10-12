@@ -40,7 +40,7 @@ const Header = () => {
     <header
       className={`fixed h-[82px] w-full bg-white shadow-md lg:sticky lg:top-0 lg:transition-transform lg:duration-300 ${show}`}
     >
-      <Wrapper className="flex items-center justify-between py-4 md:gap-3 xl:gap-8">
+      <Wrapper className="flex h-[82px] items-center justify-between py-4 md:gap-3 xl:gap-8">
         {/* logo start */}
         <div className="w-[96px]">
           <Link href="/">

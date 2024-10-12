@@ -1,7 +1,11 @@
+import HeroSection from "./components/Home/HeroSection";
+import Button from "./components/shared/Button";
+import Wrapper from "./components/shared/Wrapper";
+
 export default function Home() {
   return (
-    <div className="myClass pt-[85px] text-center text-xl font-semibold lg:pt-0">
-      <h1 className="font-srProDisplay text-2xl font-medium">Hello World</h1>
+    <div className="myClass pt-[85px] lg:pt-0">
+      <HeroSection />
     </div>
   );
 }
