@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Wrapper from "../shared/Wrapper";
 import Button from "../shared/Button";
@@ -21,11 +22,11 @@ const data = {
     descriptionColor: "#909090",
     isButton: true,
     button: {
+      buttonBgColor: "",
       buttonText: "Shop Now",
       buttonTextColor: "white",
       buttonBorderWidth: "1px",
-      buttonBorderType: "solid",
-      buttonBorderColor: "white",
+      buttonBorderColor: "grey",
       buttonHoverBgColor: "#333333",
       buttonHoverTextColor: "",
     },
@@ -33,6 +34,8 @@ const data = {
   right: {
     imageUrl: "/images/iphone.png",
     imageAlt: "iphone",
+    paddingTop: "",
+    paddingBottom: "",
   },
 };
 
@@ -81,25 +84,32 @@ const HeroSection = () => {
           <div className="mt-4 flex w-full items-center justify-center md:justify-start">
             {data.left.isButton && (
               <Button
-                className={`w-[181px] font-srProDisplay text-base font-medium text-[--text-color] hover:bg-[--hover-bg-color] hover:text-[--hover-text-color]`}
-                style={{
-                  border: `${data.left.button.buttonBorderWidth} ${data.left.button.buttonBorderType} ${data.left.button.buttonBorderColor}`,
-                  "--hover-bg-color": data.left.button.buttonHoverBgColor,
-                  "--hover-text-color":
-                    data.left.button.buttonHoverTextColor !== ""
-                      ? data.left.button.buttonHoverTextColor
-                      : data.left.button.buttonTextColor,
-                  "--text-color": data.left.button.buttonTextColor,
-                }}
+                width="181px"
+                bgColor={data.left.button.buttonBgColor}
+                textColor={data.left.button.buttonTextColor}
+                borderWidth={data.left.button.buttonBorderWidth}
+                borderColor={data.left.button.buttonBorderColor}
+                hoverBgColor={data.left.button.buttonHoverBgColor}
+                hoverTextColor={data.left.button.buttonHoverTextColor}
               >
-                {data.left.button.buttonText}
+                Show More
               </Button>
             )}
           </div>
         </div>
         {/* left side end */}
         {/* right side start */}
-        <div className="basis-[40%] overflow-hidden">
+        <div
+          className="basis-[40%] overflow-hidden pb-[--padding-bottom] pt-[--padding-top]"
+          style={{
+            "--padding-top":
+              data.right.paddingTop !== "" ? data.right.paddingTop : "0px",
+            "--padding-bottom":
+              data.right.paddingBottom !== ""
+                ? data.right.paddingBottom
+                : "0px",
+          }}
+        >
           <Image
             src={data.right.imageUrl}
             alt={data.right.imageAlt}
