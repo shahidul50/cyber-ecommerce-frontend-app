@@ -70,15 +70,17 @@ const IconMenu = ({ setShowMobileMenu, setPositionSearchBar }) => {
 
         <li className="flex h-[66px] cursor-pointer flex-col items-center justify-center border-r-0 hover:bg-blue-50 sm:h-auto sm:border-none sm:hover:bg-transparent">
           <div className="relative">
-            <Image
-              src="/images/Cart.png"
-              alt="cart icon"
-              width={32}
-              height={32}
-            />
-            <span className="absolute -right-[6px] -top-[4px] rounded-full bg-red-600 px-1 text-[10px] font-semibold text-white">
-              99
-            </span>
+            <Link href="/cart">
+              <Image
+                src="/images/Cart.png"
+                alt="cart icon"
+                width={32}
+                height={32}
+              />
+              <span className="absolute -right-[6px] -top-[4px] rounded-full bg-red-600 px-1 text-[10px] font-semibold text-white">
+                99
+              </span>
+            </Link>
           </div>
           <span className="mt-[-5px] font-srProDisplay text-sm font-medium sm:hidden">
             Cart

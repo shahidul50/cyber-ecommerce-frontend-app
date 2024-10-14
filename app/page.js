@@ -4,7 +4,7 @@ import Wrapper from "./components/shared/Wrapper";
 
 export default function Home() {
   return (
-    <div className="myClass pt-[85px] lg:pt-0">
+    <div className="pt-[85px] lg:pt-0">
       <HeroSection />
     </div>
   );

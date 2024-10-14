@@ -7,15 +7,19 @@ const Button = ({
   borderColor = "",
   hoverBgColor = "",
   hoverTextColor = "",
-  textColor = "",
+  textColor = "black",
+  textSize = "16px",
+  fontWeight = "400",
   width = "",
+  height = "10px",
   borderWidth = "",
   bgColor = "",
   clickEvent = () => {},
+  disabled = false,
 }) => {
   return (
     <button
-      className={`flex h-14 w-[--bg-width] items-center justify-center gap-2 rounded-md bg-[--bg-color] px-3 font-srProDisplay text-base font-medium text-[--text-color] hover:bg-[--hover-bg-color] hover:text-[--hover-text-color] *:hover:text-[--hover-text-color]`}
+      className={`flex h-[--btn-height] w-[--btn-width] items-center justify-center gap-2 rounded-md bg-[--bg-color] px-3 font-srProDisplay font-[--font-weight] text-[--text-color] outline-none hover:bg-[--hover-bg-color] hover:text-[--hover-text-color] *:hover:text-[--hover-text-color]`}
       style={{
         border: `${
           borderWidth === "" ? "0px" : borderWidth
@@ -25,9 +29,13 @@ const Button = ({
           hoverTextColor !== "" ? hoverTextColor : textColor,
         "--text-color": textColor,
         "--bg-color": bgColor,
-        "--bg-width": width,
+        "--btn-width": width,
+        "--btn-height": height,
+        "--font-weight": fontWeight,
+        fontSize: textSize,
       }}
       onClick={clickEvent}
+      disabled={disabled}
     >
       {children} {icon && <FaAngleDown size={16} />}
     </button>

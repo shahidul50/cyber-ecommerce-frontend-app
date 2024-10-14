@@ -85,6 +85,8 @@ const HeroSection = () => {
             {data.left.isButton && (
               <Button
                 width="181px"
+                height="56px"
+                fontWeight="600"
                 bgColor={data.left.button.buttonBgColor}
                 textColor={data.left.button.buttonTextColor}
                 borderWidth={data.left.button.buttonBorderWidth}
