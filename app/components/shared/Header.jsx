@@ -38,7 +38,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed h-[82px] w-full bg-white shadow-md lg:sticky lg:top-0 lg:transition-transform lg:duration-300 ${show}`}
+      className={`fixed z-50 h-[82px] w-full bg-white shadow-md lg:sticky lg:left-0 lg:top-0 lg:transition-transform lg:duration-300 ${show}`}
     >
       <Wrapper className="flex h-[82px] items-center justify-between py-4 md:gap-3 xl:gap-8">
         {/* logo start */}
@@ -63,7 +63,7 @@ const Header = () => {
         {/* Navigation start */}
         <div className="px-1 lg:w-[383px]">
           <ul
-            className={`fixed top-[81px] z-10 flex h-screen w-[250px] flex-col items-start justify-start gap-0 bg-[#f1f1f1] p-2 font-srProDisplay text-base font-medium text-black *:w-full lg:static lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:justify-center lg:gap-3 lg:bg-transparent lg:p-0 lg:text-gray-400 *:lg:text-center ${showMobileMenu} duration-500 ease-linear lg:duration-0`}
+            className={`fixed top-[81px] z-50 flex h-screen w-[250px] flex-col items-start justify-start gap-0 bg-[#f1f1f1] p-2 font-srProDisplay text-base font-medium text-black *:w-full lg:static lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:justify-center lg:gap-3 lg:bg-transparent lg:p-0 lg:text-gray-400 *:lg:text-center ${showMobileMenu} duration-500 ease-linear lg:duration-0`}
           >
             <li className="active block p-3 duration-300 hover:bg-blue-200 lg:p-0 hover:lg:bg-transparent hover:lg:text-black">
               <Link href="/">Home</Link>
