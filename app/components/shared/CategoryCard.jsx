@@ -4,7 +4,7 @@ import Image from "next/image";
 const CategoryCard = ({ category }) => {
   return (
     <Link href={`/category/${category.slug}`}>
-      <div className="mb-2 !flex !h-[128px] !w-[160px] flex-col items-center justify-center gap-3 rounded-[15px] bg-[#ededed] py-4 text-white">
+      <div className="mb-3 !flex !h-[128px] !w-[160px] flex-col items-center justify-center gap-3 rounded-[15px] bg-[#ededed] py-4 text-white">
         <Image
           src={category.image.url}
           alt={category.image.altText}

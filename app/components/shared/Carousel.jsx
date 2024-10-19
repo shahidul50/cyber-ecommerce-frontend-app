@@ -4,8 +4,48 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import CategoryCard from "./CategoryCard";
+import Button from "./Button";
 
 const Carousel = ({ categories }) => {
+  //  test code start
+  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+    <button
+      {...props}
+      className={
+        "slick-prev slick-arrow !flex !items-center !justify-center" +
+        (currentSlide === 0 ? " slick-disabled" : "")
+      }
+      aria-hidden="true"
+      aria-disabled={currentSlide === 0 ? true : false}
+      type="button"
+    >
+      <IoIosArrowBack color="black" />
+    </button>
+    // <Button height="40" width="40" bgColor="red">
+    //   {" "}
+    //   <IoIosArrowBack color="black" />
+    // </Button>
+  );
+  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+    <button
+      {...props}
+      className={
+        "slick-next slick-arrow !flex !items-center !justify-center" +
+        (currentSlide === slideCount - 1 ? " slick-disabled" : "")
+      }
+      aria-hidden="true"
+      aria-disabled={currentSlide === slideCount - 1 ? true : false}
+      type="button"
+    >
+      <IoIosArrowForward color="black" />
+    </button>
+    // <Button height="40" width="40" bgColor="red">
+    //   {" "}
+    //   <IoIosArrowForward color="black" />
+    // </Button>
+  );
+  //  test code end
+
   const settings = {
     dots: false,
     infinite: false,
@@ -13,8 +53,8 @@ const Carousel = ({ categories }) => {
     slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide: 0,
-    prevArrow: <IoIosArrowBack color="black" />,
-    nextArrow: <IoIosArrowForward color="black" />,
+    prevArrow: <SlickArrowLeft />,
+    nextArrow: <SlickArrowRight />,
     responsive: [
       {
         breakpoint: 1500,
