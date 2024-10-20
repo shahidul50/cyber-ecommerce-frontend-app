@@ -95,7 +95,7 @@ const Carousel = ({ categories }) => {
     ],
   };
   return (
-    <div>
+    <div className="browse-category">
       <Slider {...settings} className="flex h-fit items-center md:h-[192px]">
         {categories.map((category) => (
           <CategoryCard key={category.id} category={category} />

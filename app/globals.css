@@ -33,7 +33,7 @@ body {
 } */
 
 /* for category carousel start */
-.slick-prev {
+.browse-category .slick-prev {
   color: black !important;
   top: -40px !important;
   left: auto !important;
@@ -49,7 +49,7 @@ body {
   -o-border-radius: 15%;
 }
 
-.slick-next {
+.browse-category .slick-next {
   color: black !important;
   top: -40px !important;
   right: -1px !important;
@@ -64,42 +64,50 @@ body {
   -o-border-radius: 15%;
 }
 
-.slick-next:hover {
+.browse-category .slick-next:hover {
   background: ghostwhite !important;
 }
 
-.slick-prev:hover {
+.browse-category .slick-prev:hover {
   background: ghostwhite !important;
 }
 
-.slick-list {
+.browse-category .slick-list {
   margin-top: 63px !important;
 
 }
 
-.slick-track {
+.browse-category .slick-track {
   left: 3px !important;
 }
 
-.slick-slide {
+.browse-category .slick-slide {
   padding-left: 0px !important
 }
 
-body .slick-prev::before,
-body .slick-next::before {
+.browse-category .slick-prev::before,
+.browse-category .slick-next::before {
   display: none;
 }
 
 @media (min-width:375px) {
-  .slick-slide {
+  .browse-category .slick-slide {
     padding-left: 5px !important
   }
 }
 
 @media (min-width:412px) {
-  .slick-slide {
+  .browse-category .slick-slide {
     padding-left: 12px !important
   }
 }
 
 /* for category carousel end */
+
+
+/* for BannerOne Carousel start */
+.bannerOne .slick-dots {
+  bottom: 20px !important;
+}
+
+/* for BannerOne Carousel end */

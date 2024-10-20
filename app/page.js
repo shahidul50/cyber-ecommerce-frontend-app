@@ -1,4 +1,5 @@
 import BannerSection from "./components/Home/BannerSection";
+import BannerSectionOne from "./components/Home/BannerSectionOne";
 import BrowseCategorySection from "./components/Home/BrowseCategorySection";
 import HeroSection from "./components/Home/HeroSection";
 import Wrapper from "./components/shared/Wrapper";
@@ -12,9 +13,12 @@ export default function Home() {
       {/* browse category section start */}
       <BrowseCategorySection />
       {/* browse category section end */}
-      {/* banner section start */}
+      {/* banner section one start */}
+      <BannerSectionOne />
+      {/* banner section one start */}
+      {/* banner section Two start */}
       <BannerSection />
-      {/* banner section end */}
+      {/* banner section Two end */}
     </div>
   );
 }
