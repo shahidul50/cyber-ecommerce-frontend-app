@@ -4,10 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import CategoryCard from "./CategoryCard";
-import Button from "./Button";
 
 const Carousel = ({ categories }) => {
-  //  test code start
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <button
       {...props}
@@ -21,10 +19,6 @@ const Carousel = ({ categories }) => {
     >
       <IoIosArrowBack color="black" />
     </button>
-    // <Button height="40" width="40" bgColor="red">
-    //   {" "}
-    //   <IoIosArrowBack color="black" />
-    // </Button>
   );
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
     <button
@@ -39,12 +33,7 @@ const Carousel = ({ categories }) => {
     >
       <IoIosArrowForward color="black" />
     </button>
-    // <Button height="40" width="40" bgColor="red">
-    //   {" "}
-    //   <IoIosArrowForward color="black" />
-    // </Button>
   );
-  //  test code end
 
   const settings = {
     dots: false,

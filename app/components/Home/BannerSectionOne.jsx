@@ -51,7 +51,7 @@ const BannerSectionOne = () => {
   };
 
   return (
-    <section className="h-[640px] w-full overflow-hidden">
+    <section className="overflow-none h-[640px] w-full">
       <Slider
         {...settings}
         className="bannerOne flex h-fit w-full items-center gap-1"

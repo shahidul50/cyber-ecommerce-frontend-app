@@ -110,4 +110,99 @@ body {
   bottom: 20px !important;
 }
 
+.bannerOne .slick-prev::before,
+.bannerOne .slick-next::before {
+  display: none;
+}
+
+.bannerOne .slick-prev {
+  display: none !important;
+  left: 40px !important;
+}
+
+.bannerOne .slick-next {
+  display: none !important;
+  right: 40px !important;
+}
+
 /* for BannerOne Carousel end */
+
+/* for discount Product carousel start */
+
+.discountProduct .slick-prev::before,
+.discountProduct .slick-next::before {
+  display: none;
+}
+
+.discountProduct .slick-prev {
+  color: black !important;
+  top: -40px !important;
+  left: auto !important;
+  right: 40px !important;
+  font-size: 20px !important;
+  padding: 5px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+
+.discountProduct .slick-next {
+  color: black !important;
+  top: -40px !important;
+  right: -1px !important;
+  padding: 5px !important;
+  font-size: 20px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+
+.discountProduct .slick-next:hover {
+  background: ghostwhite !important;
+}
+
+.discountProduct .slick-prev:hover {
+  background: ghostwhite !important;
+}
+
+.discountProduct .slick-slide {
+  padding-left: 6px !important
+}
+
+/* for discount Product carousel end */
+
+/* for Scrollbar design (start) */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #242323;
+}
+
+/* for Scrollbar design (start) */

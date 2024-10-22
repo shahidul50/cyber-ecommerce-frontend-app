@@ -1,8 +1,8 @@
 import BannerSection from "./components/Home/BannerSection";
 import BannerSectionOne from "./components/Home/BannerSectionOne";
 import BrowseCategorySection from "./components/Home/BrowseCategorySection";
+import DiscountProductSection from "./components/Home/DiscountProductSection";
 import HeroSection from "./components/Home/HeroSection";
-import Wrapper from "./components/shared/Wrapper";
 
 export default function Home() {
   return (
@@ -19,6 +19,9 @@ export default function Home() {
       {/* banner section Two start */}
       <BannerSection />
       {/* banner section Two end */}
+      {/* discount Product Section start */}
+      <DiscountProductSection />
+      {/* discount Product Section end */}
     </div>
   );
 }

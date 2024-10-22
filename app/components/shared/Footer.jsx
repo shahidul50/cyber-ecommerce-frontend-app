@@ -7,11 +7,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="mb-[66px] h-auto w-full bg-black text-white sm:mb-0 lg:h-[464px]">
-      <Wrapper className="flex h-auto flex-col gap-8 p-[48px_32px] md:gap-6 md:px-[64px] lg:p-[104px_160px_144px_160px]">
-        <div
-          id="info"
-          className="flex h-auto w-full flex-col items-center justify-start gap-8 md:flex-row md:items-start lg:h-[216px] lg:justify-between"
-        >
+      <Wrapper className="flex h-auto flex-col gap-8 py-12 md:gap-6 md:px-[64px] lg:py-[104px]">
+        <div className="flex h-auto w-full flex-col items-center justify-start gap-8 md:flex-row md:items-start lg:h-[216px] lg:justify-between">
           <div className="basis-auto text-center md:text-left lg:basis-[384px]">
             <Link href="/" className="flex justify-center md:justify-start">
               <Image
@@ -85,10 +82,7 @@ const Footer = () => {
           </div>
         </div>
         {/* footer social icon section start */}
-        <div
-          id="socialIcons"
-          className="mx-auto flex w-[173px] items-center justify-between md:mx-0 lg:h-[16px]"
-        >
+        <div className="mx-auto flex w-[173px] items-center justify-between md:mx-0 lg:h-[16px]">
           <Link href="#">
             <FaTwitter size={16} color="white" />
           </Link>
