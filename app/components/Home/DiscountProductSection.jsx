@@ -15,8 +15,8 @@ const DiscountProductSection = () => {
       originalPrice: "1437",
       discountPrice: "1350",
       image: {
-        url: "/images/Apple-iphone-14-pro.png",
-        altText: "Apple-iphone-14-pro",
+        url: "/images/Iphone-14-pro-gold.png",
+        altText: "Iphone-14-pro-gold",
       },
     },
     {
@@ -102,8 +102,7 @@ const DiscountProductSection = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          centerPadding: "60px",
-          rows: 2,
+          rows: data.length > 3 ? 2 : 1,
           slidesPerRow: 1,
         },
       },
@@ -112,17 +111,15 @@ const DiscountProductSection = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: "60px",
           rows: 2,
           slidesPerRow: 1,
         },
       },
     ],
   };
-
   return (
-    <section className="w-full">
-      <Wrapper className="flex w-full flex-col gap-8 py-[80px]">
+    <section className="h-auto w-full">
+      <Wrapper className="flex h-fit w-full flex-col gap-8 py-[80px]">
         <div>
           <h3 className="font-srProDisplay text-2xl font-medium">
             Discountable Products
@@ -130,12 +127,16 @@ const DiscountProductSection = () => {
         </div>
         <Slider
           {...settings}
-          className="discountProduct flex h-fit w-full items-center pt-3 md:h-[455px]"
+          className="discountProduct grid w-full items-center pt-3"
         >
           {data.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              className="mb-4 w-[163.5px] xs:w-[190px] sm:w-[298px] md:mb-0 md:w-[240px] xl:w-[268px]"
+            />
           ))}
-          <ViewMoreCard />
+          {data.length >= 16 && <ViewMoreCard />}
         </Slider>
       </Wrapper>
     </section>

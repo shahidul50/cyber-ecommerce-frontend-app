@@ -6,6 +6,10 @@
   .active {
     @apply text-black bg-blue-200 lg:bg-transparent
   }
+
+  .activeTab {
+    @apply border-b-4 border-black
+  }
 }
 
 /* :root {
@@ -104,6 +108,81 @@ body {
 
 /* for category carousel end */
 
+/* for Products carousel start */
+
+.products .slick-prev::before,
+.products .slick-next::before {
+  display: none;
+}
+
+.products .slick-prev {
+  color: black !important;
+  top: -48px !important;
+  left: auto !important;
+  right: 40px !important;
+  font-size: 20px !important;
+  padding: 5px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+
+.products .slick-next {
+  color: black !important;
+  top: -48px !important;
+  right: -1px !important;
+  padding: 5px !important;
+  font-size: 20px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+
+.products .slick-next:hover {
+  background: ghostwhite !important;
+}
+
+.products .slick-prev:hover {
+  background: ghostwhite !important;
+}
+
+.products .slick-slide {
+  padding-left: 0px !important;
+}
+
+@media (min-width: 640px) {
+  .products .slick-slide {
+    padding-left: 6px !important;
+  }
+}
+
+/* for Products carousel end */
+
+/* for productTag carousel start */
+
+.productTag .slick-prev::before,
+.productTag .slick-next::before {
+  display: none;
+}
+
+.productTag .slick-next {
+  display: none !important;
+}
+
+.productTag .slick-prev {
+  display: none !important;
+}
+
+/* for productTag carousel end */
+
 
 /* for BannerOne Carousel start */
 .bannerOne .slick-dots {
@@ -136,7 +215,7 @@ body {
 
 .discountProduct .slick-prev {
   color: black !important;
-  top: -40px !important;
+  top: -48px !important;
   left: auto !important;
   right: 40px !important;
   font-size: 20px !important;
@@ -152,7 +231,7 @@ body {
 
 .discountProduct .slick-next {
   color: black !important;
-  top: -40px !important;
+  top: -48px !important;
   right: -1px !important;
   padding: 5px !important;
   font-size: 20px !important;
@@ -174,7 +253,13 @@ body {
 }
 
 .discountProduct .slick-slide {
-  padding-left: 6px !important
+  padding-left: 1px !important
+}
+
+@media (min-width: 640px) {
+  .discountProduct .slick-slide {
+    padding-left: 6px !important;
+  }
 }
 
 /* for discount Product carousel end */

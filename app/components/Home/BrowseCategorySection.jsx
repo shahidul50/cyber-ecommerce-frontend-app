@@ -68,7 +68,7 @@ const BrowseCategorySection = () => {
       },
     },
     {
-      id: 7,
+      id: 8,
       name: "Test-2",
       slug: "gaming",
       image: {

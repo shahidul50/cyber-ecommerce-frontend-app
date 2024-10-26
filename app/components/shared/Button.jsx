@@ -19,7 +19,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`flex h-[--btn-height] w-[--btn-width] items-center justify-center gap-2 rounded-md bg-[--bg-color] px-3 font-srProDisplay font-[--font-weight] text-[--text-color] outline-none hover:bg-[--hover-bg-color] hover:text-[--hover-text-color] *:hover:text-[--hover-text-color]`}
+      className={`flex h-[--btn-height] w-[--btn-width] items-center justify-center gap-2 rounded-md bg-[--bg-color] px-3 font-srProDisplay font-[--font-weight] text-[--text-color] outline-none hover:bg-[--hover-bg-color] hover:text-[--hover-text-color] *:hover:text-[--hover-text-color] disabled:bg-gray-600`}
       style={{
         border: `${
           borderWidth === "" ? "0px" : borderWidth

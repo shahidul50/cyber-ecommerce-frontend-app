@@ -27,7 +27,7 @@ const data = [
     productName: "Apple Iphone 13 Pro black",
     productCode: "#63632324",
     originalPrice: 999,
-    imageUrl: "/images/product-image.png",
+    imageUrl: "/images/Iphone-14-pro-black.png",
     imageAlt: "Iphone pro",
   },
 ];

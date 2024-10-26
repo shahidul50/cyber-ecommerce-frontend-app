@@ -3,6 +3,7 @@ import BannerSectionOne from "./components/Home/BannerSectionOne";
 import BrowseCategorySection from "./components/Home/BrowseCategorySection";
 import DiscountProductSection from "./components/Home/DiscountProductSection";
 import HeroSection from "./components/Home/HeroSection";
+import ProductsSection from "./components/Home/ProductsSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       {/* browse category section start */}
       <BrowseCategorySection />
       {/* browse category section end */}
+      {/* products section start */}
+      <ProductsSection />
+      {/* products section end */}
       {/* banner section one start */}
       <BannerSectionOne />
       {/* banner section one start */}
